@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.login-form{
+  
+    box-shadow: 2px 2px 5px black,-2px -2px 5px black;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    border-radius: 0.5rem;
+ }.login-form h1{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline 2px solid;
+  margin-bottom: 1rem;
+  }
+  
+  .login-form:hover{
+    box-shadow: 10px 10px 50px black,-10px -10px 50px black;
+    transition: 0.1s linear;
+  }
+  .input-ligin-div{
+    border-bottom :1px solid;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .login-form input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 90%;
+    height: 2rem;
+  }
+  .login_btn{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+   height: 2rem;
+  }
+  
+  .login_btn div{
+  padding: 0.2rem;
+  height: 2rem;
+  
+  }
+
+  .authbtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: .3s;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  }
+  
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  
+ .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  
+  .authbtn:hover,.authbtn:active {
+    width: 125px;
+    border-radius: 35px;
+    transition-duration: .3s;
+  }
+  
+  .authbtn:hover .sign,.authbtn:active .sign{
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  
+  .authbtn:hover .text,  .authbtn:active .text { */
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  
+  .authbtn:active {
+    transform: translate(2px ,2px);
+    box-shadow: none;
+  } */
+  
+  
+
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .cred-p{
+    margin-top: 1rem;
+  } 
+  @media screen and (max-width:426px)  and (min-width:320px){
+    body{
+      font-size: 0.8rem;
+    }
+    .login-form{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+       margin-left: 1rem;
+      padding: 1rem;
+      width: 65%;
+    }
+     .login-form input{
+      width: 80%;
+    
+     }
+     .input-ligin-div{
+      margin-top: 0.5rem;
+      padding: 0;
+     }
+     .login-form .cred-p{
+      margin-top:0.5rem;
+      font-size: 10px;
+     }
+   .logbtn{
+     margin-bottom: 0.5rem;
+     }
+  }
+  
+  @media screen and (max-width:768px)  and (min-width:427px){
+    .login-form{
+      width: 40%;
+    }
+    .login-form input{
+      width: 79%;
+    
+     }
+  }
+  
+  @media screen and (max-width:1024px)  and (min-width:769px){
+    .login-form{
+      width: 40%;
+    }
+    .login-form input{
+      width: 85%;
+    
+     }
+  } 
