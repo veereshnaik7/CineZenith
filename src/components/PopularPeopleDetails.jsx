@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import '../css/people.css'
 
 const PopularPeopleDetails = () => {
   const [data, setdata] = useState([]);
@@ -35,7 +36,7 @@ const PopularPeopleDetails = () => {
     handleCastMovies();
   }, []);
   return (
-    <div className="main-div" id="main-div">
+    <div className="main-div" >
       <div className="people-details">
         {data.map(
           ({

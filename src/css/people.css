@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -6,6 +6,7 @@
   overflow: visible;
   width: 190px;
   height: 254px;
+  padding: 1rem;
 }
 
 .content {
@@ -211,4 +212,4 @@ p{
 p{
   font-size: 0.7rem;
 }
-} */
+}
