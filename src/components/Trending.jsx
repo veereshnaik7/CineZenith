@@ -165,6 +165,8 @@ const handleTrendingPeople=({ adult,
               title,
               vote_average,
               vote_count,
+              name,
+              first_air_date,
             }) => (
               <div className="top-card" key={id}>
                 <div className="wrapper">
@@ -175,8 +177,8 @@ const handleTrendingPeople=({ adult,
                       alt="img"
                     />
                     <div className="descriptions">
-                      <p className="name">{title}</p>
-                      <p>{release_date}</p>
+                      <p className="name">{title ?? name}</p>
+                      <p>{release_date ?? first_air_date}</p>
                       <p> {vote_average}/10</p>
                       <button
                         className="btn"

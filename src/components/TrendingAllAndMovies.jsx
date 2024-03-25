@@ -122,7 +122,7 @@ const {adult,
           {
             movieCast.length>0?(
               <>
-              {movieCast.map( ({ id, name, known_for_department, character, profile_path }) => (
+              {movieCast.map( ({ id, name, known_for_department, character, profile_path, }) => (
                   <div className="top-card" key={id}>
                     <div className="wrapper">
                       <div className="card">
