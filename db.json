@@ -1,0 +1,256 @@
+{
+  "watchListMovies": [
+    {
+      "release_date": "2024-02-14",
+      "id": 634492,
+      "title": "Madame Web",
+      "vote_average": 5.559,
+      "poster_path": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+      "vote_count": 697,
+      "popularity": 2883.46,
+      "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
+      "backdrop_path": "/zAepSrO99owYwQqi0QG2AS0dHXw.jpg",
+      "original_language": "en",
+      "adult": false
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bsQM8tL1HgkpNGqtotzz6iQ2NfT.jpg",
+      "id": 108545,
+      "media_type": "tv",
+      "original_language": "en",
+      "overview": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
+      "popularity": 524.105,
+      "poster_path": "/sphnjjiYb50SbWMToW7fyGigH1n.jpg",
+      "vote_average": 6.8,
+      "vote_count": 113
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/87IVlclAfWL6mdicU1DDuxdwXwe.jpg",
+      "id": 693134,
+      "media_type": "movie",
+      "original_language": "en",
+      "original_title": "Dune: Part Two",
+      "overview": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+      "popularity": 853.03,
+      "poster_path": "/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+      "release_date": "2024-02-27",
+      "title": "Dune: Part Two",
+      "vote_average": 8.399,
+      "vote_count": 2033
+    },
+    {
+      "release_date": "2024-01-18",
+      "id": 1096197,
+      "title": "No Way Up",
+      "vote_average": 6.127,
+      "poster_path": "/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
+      "vote_count": 271,
+      "popularity": 1086.198,
+      "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
+      "backdrop_path": "/mDeUmPe4MF35WWlAqj4QFX5UauJ.jpg",
+      "original_language": "pt",
+      "adult": false
+    },
+    {
+      "release_date": "2024-01-31",
+      "id": 848538,
+      "title": "Argylle",
+      "vote_average": 6.155,
+      "poster_path": "/95VlSEfLMqeX36UVcHJuNlWEpwf.jpg",
+      "vote_count": 692,
+      "popularity": 1109.693,
+      "overview": "When the plots of reclusive author Elly Conway's fictional espionage novels begin to mirror the covert actions of a real-life spy organization, quiet evenings at home become a thing of the past. Accompanied by her cat Alfie and Aiden, a cat-allergic spy, Elly races across the world to stay one step ahead of the killers as the line between Conway's fictional world and her real one begins to blur.",
+      "backdrop_path": "/xvk5AhfhgQcTuaCQyq3XqAnhEma.jpg",
+      "original_language": "en",
+      "adult": false
+    }
+  ],
+  "watchListTvShows": [
+    {
+      "first_air_date": "2006-09-23",
+      "id": 5579,
+      "name": "Freej",
+      "vote_average": 10,
+      "poster_path": "/ttiiwKozgWVQNnHtzvORPd7PyFc.jpg",
+      "origin_country": [
+        "AE"
+      ],
+      "original_name": "فريج",
+      "popularity": 2705.413,
+      "overview": "The first Emirati animated series recounts the adventures of four old women living in a secluded neighbourhood in modern-day Dubai.",
+      "backdrop_path": "/kbLnQnbu8rygcqP9hhCaDdNcbEF.jpg",
+      "original_language": "ar",
+      "adult": false,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n5pumhzyH0jIBtRoGGjJd8O0wQ0.jpg",
+      "first_air_date": "2024-03-20",
+      "genre_ids": [
+        16,
+        10759,
+        10765
+      ],
+      "id": 138502,
+      "media_type": "tv",
+      "name": "X-Men '97",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "popularity": 582.786,
+      "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
+      "vote_average": 8.7,
+      "vote_count": 54
+    },
+    {
+      "first_air_date": "2018-05-17",
+      "id": 101604,
+      "name": "My Heart Relieved",
+      "vote_average": 5.8,
+      "poster_path": "/3iNT3rKs8q7qDr1fWxfznimZ7JV.jpg",
+      "origin_country": [
+        "AE"
+      ],
+      "original_name": "قلبي اطمأن",
+      "popularity": 1838.992,
+      "overview": "A program that gives you the chance to live a social experience with a young man called \"Ghaith\". Who is roaming countries to meet people in distress and pain; to look for an opportunity to make a difference in their lives.",
+      "backdrop_path": "/nHS1U0yaaWV0rbcL0MHzZxW2gCZ.jpg",
+      "original_language": "ar",
+      "adult": false,
+      "vote_count": 10
+    }
+  ],
+  "FavouriteMovies": [
+    {
+      "release_date": "2024-02-14",
+      "id": 634492,
+      "title": "Madame Web",
+      "vote_average": 5.559,
+      "poster_path": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+      "vote_count": 697,
+      "popularity": 2883.46,
+      "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
+      "backdrop_path": "/zAepSrO99owYwQqi0QG2AS0dHXw.jpg",
+      "original_language": "en",
+      "adult": false
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/bsQM8tL1HgkpNGqtotzz6iQ2NfT.jpg",
+      "id": 108545,
+      "media_type": "tv",
+      "original_language": "en",
+      "overview": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
+      "popularity": 524.105,
+      "poster_path": "/sphnjjiYb50SbWMToW7fyGigH1n.jpg",
+      "vote_average": 6.8,
+      "vote_count": 113
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/87IVlclAfWL6mdicU1DDuxdwXwe.jpg",
+      "id": 693134,
+      "media_type": "movie",
+      "original_language": "en",
+      "original_title": "Dune: Part Two",
+      "overview": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+      "popularity": 853.03,
+      "poster_path": "/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+      "release_date": "2024-02-27",
+      "title": "Dune: Part Two",
+      "vote_average": 8.399,
+      "vote_count": 2033
+    },
+    {
+      "release_date": "2024-01-18",
+      "id": 1096197,
+      "title": "No Way Up",
+      "vote_average": 6.127,
+      "poster_path": "/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
+      "vote_count": 271,
+      "popularity": 1086.198,
+      "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
+      "backdrop_path": "/mDeUmPe4MF35WWlAqj4QFX5UauJ.jpg",
+      "original_language": "pt",
+      "adult": false
+    },
+    {
+      "release_date": "2024-01-31",
+      "id": 848538,
+      "title": "Argylle",
+      "vote_average": 6.155,
+      "poster_path": "/95VlSEfLMqeX36UVcHJuNlWEpwf.jpg",
+      "vote_count": 692,
+      "popularity": 1109.693,
+      "overview": "When the plots of reclusive author Elly Conway's fictional espionage novels begin to mirror the covert actions of a real-life spy organization, quiet evenings at home become a thing of the past. Accompanied by her cat Alfie and Aiden, a cat-allergic spy, Elly races across the world to stay one step ahead of the killers as the line between Conway's fictional world and her real one begins to blur.",
+      "backdrop_path": "/xvk5AhfhgQcTuaCQyq3XqAnhEma.jpg",
+      "original_language": "en",
+      "adult": false
+    }
+  ],
+  "FavouriteTvShows": [
+    {
+      "first_air_date": "2006-09-23",
+      "id": 5579,
+      "name": "Freej",
+      "vote_average": 10,
+      "poster_path": "/ttiiwKozgWVQNnHtzvORPd7PyFc.jpg",
+      "origin_country": [
+        "AE"
+      ],
+      "original_name": "فريج",
+      "popularity": 2705.413,
+      "overview": "The first Emirati animated series recounts the adventures of four old women living in a secluded neighbourhood in modern-day Dubai.",
+      "backdrop_path": "/kbLnQnbu8rygcqP9hhCaDdNcbEF.jpg",
+      "original_language": "ar",
+      "adult": false,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n5pumhzyH0jIBtRoGGjJd8O0wQ0.jpg",
+      "first_air_date": "2024-03-20",
+      "genre_ids": [
+        16,
+        10759,
+        10765
+      ],
+      "id": 138502,
+      "media_type": "tv",
+      "name": "X-Men '97",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "popularity": 582.786,
+      "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
+      "vote_average": 8.7,
+      "vote_count": 54
+    },
+    {
+      "first_air_date": "2018-05-17",
+      "id": 101604,
+      "name": "My Heart Relieved",
+      "vote_average": 5.8,
+      "poster_path": "/3iNT3rKs8q7qDr1fWxfznimZ7JV.jpg",
+      "origin_country": [
+        "AE"
+      ],
+      "original_name": "قلبي اطمأن",
+      "popularity": 1838.992,
+      "overview": "A program that gives you the chance to live a social experience with a young man called \"Ghaith\". Who is roaming countries to meet people in distress and pain; to look for an opportunity to make a difference in their lives.",
+      "backdrop_path": "/nHS1U0yaaWV0rbcL0MHzZxW2gCZ.jpg",
+      "original_language": "ar",
+      "adult": false,
+      "vote_count": 10
+    }
+  ]
+}
