@@ -86,7 +86,7 @@ const {adult,
               {Math.round((100 * vote_average) / 10)}%
             </div>
           </>
-          <p>original language : {original_language}</p>
+          <p className="content-p">original language : {original_language}</p>
           
           <div>
             <a
@@ -111,8 +111,8 @@ const {adult,
               axios.post('http://localhost:3001/FavouriteMovies',detailsAllAndMovie)
              navigate('/favourites')
            }}/>
-            <h5>overview</h5>
-            <p>{overview}</p>
+            <h4>overview</h4>
+            <p className="content-p">{overview}</p>
           </div>
         </div>
       </div>

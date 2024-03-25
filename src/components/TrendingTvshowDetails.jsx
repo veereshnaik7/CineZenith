@@ -93,7 +93,7 @@ const TrendingTvshowDetails = () => {
               {Math.round((100 * vote_average) / 10)}%
             </div>
           </>
-          <p>countery origin : {origin_country}</p>
+          <p className="content-p">countery origin : {origin_country}</p>
           <div>
             <a
               title="play trailer"
@@ -114,8 +114,8 @@ const TrendingTvshowDetails = () => {
              navigate('/favourites')
            }}
             />
-            <h5>overview</h5>
-            <p>{overview}</p>
+            <h4>overview</h4>
+            <p className="content-p">{overview}</p>
           </div>
         </div>
       </div>

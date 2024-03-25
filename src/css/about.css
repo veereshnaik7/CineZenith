@@ -98,15 +98,16 @@
   margin-right: 0.2rem;
   border-radius: 50%;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-border: 2px solid black;
+  border: 2px solid black;
 }
 
 .socialicon {
   font-size: 1.5rem;
-color: black;
+  color: black;
   padding: 0.5rem;
 }
-.social-media-icons:hover,.social-media-icons:active{
-    transform: scale(1.1);
-    transition: ease 0.2s;
+.social-media-icons:hover,
+.social-media-icons:active {
+  transform: scale(1.1);
+  transition: ease 0.2s;
 }

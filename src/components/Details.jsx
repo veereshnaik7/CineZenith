@@ -89,7 +89,7 @@ const Details = () => {
               {Math.round((100 * vote_average) / 10)}%
             </div>
           </>
-          <p>original language : {original_language}</p>
+          <p className="content-p">original language : {original_language}</p>
 
           <div>
             <a
@@ -116,8 +116,8 @@ const Details = () => {
              navigate('/favourites')
            }}/>
 
-            <h5>overview</h5>
-            <p>{overview}</p>
+            <h4>overview</h4>
+            <p className="content-p">{overview}</p>
           </div>
         </div>
       </div>

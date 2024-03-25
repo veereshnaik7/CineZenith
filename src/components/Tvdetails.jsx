@@ -68,13 +68,14 @@ const Tvdetails = () => {
 
   useEffect(() => {
     handleCastMovies();
+    handleTVtrailers()
   }, []);
   const backgroundimg = {
     backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
   };
   return (
     <div className="main-div" id="main-div">
-      <div className="details" style={backgroundimg} onMouseOver={()=>handleTVtrailers({id})}>
+      <div className="details" style={backgroundimg} >
         <div className="details-img">
           <img
             className="poster-path-img"
@@ -89,13 +90,13 @@ const Tvdetails = () => {
           </h4>
           <>
             user score{" "}
-            <div className="votescore">
+            <div className="votescore" >
               {Math.round((100 * vote_average) / 10)}%
             </div>
           </>
-          <p>countery origin : {origin_country}</p>
-          <div>
-            <a
+          <p className="content-p">countery origin : {origin_country}</p>
+          <div> 
+            <a id="trailer"
               title="play trailer"
               target="_blank"
               rel="noopener noreferrer"
@@ -103,7 +104,6 @@ const Tvdetails = () => {
             >
               <CiPlay1 className="rating-icons" />
             </a>
-
             <MdOutlinePlaylistAdd className="rating-icons" title="add to watch list"
               onClick={ ()=>{
                 axios.post('http://localhost:3001/watchListTvShows',details)
@@ -116,8 +116,8 @@ const Tvdetails = () => {
              navigate('/favourites')
            }} />
             
-            <h5>overview</h5>
-            <p>{overview}</p>
+            <h4>overview</h4>
+            <p className="content-p">{overview}</p>
           </div>
         </div>
       </div>
