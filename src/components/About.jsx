@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import '../css/about.css'
 const About = () => {
   
   return (
@@ -21,7 +22,7 @@ const About = () => {
           <br />
           <span className="desgination">UI/UX Developer</span>
           <br />
-          <div className="name">Ramavath Veeresh Naik</div>
+          <p className="name">Ramavath Veeresh Naik</p>
           <br />
           <div className="social-media">
             <NavLink
@@ -29,28 +30,28 @@ const About = () => {
               target="_blank"
               href="https://www.linkedin.com/in/veeresh-naik-22003127a/"
             >
-              <FaLinkedin />
+              <FaLinkedin className="socialicon" />
             </NavLink>
             <NavLink
               className="social-media-icons"
               target="_blank"
               href="https://github.com/veereshnaik7"
             >
-              <FaGithub />
+              <FaGithub className="socialicon"/>
             </NavLink>
             <NavLink
               className="social-media-icons"
               target="_blank"
               href="https://www.instagram.com/veereshnaik__/?igshid=YTQwZjQ0NmI0OA%3D%3D"
             >
-              <FaInstagramSquare />
+              <FaInstagramSquare className="socialicon"/>
             </NavLink>
             <NavLink
               className="social-media-icons"
               target="_blank"
               href="https://www.facebook.com/veeresh.naik.5680"
             >
-              <FaFacebook />
+              <FaFacebook className="socialicon"/>
             </NavLink>
           </div>
         </div>

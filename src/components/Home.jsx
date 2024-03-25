@@ -25,6 +25,7 @@ const Home = () => {
     (state) => state.cineZenithSlice.upComingMovies
   );
 
+
   const watchListMovies = useSelector(
     (state) => state.cineZenithSlice.watchListMovies
   );
@@ -92,7 +93,7 @@ const Home = () => {
         </h4>
       </div>
 
-      <h4>Latest Trailers</h4>
+      <h4 className="trail">Latest Trailers</h4>
       <div className="outer">
         {loading && (
           <ColorRing

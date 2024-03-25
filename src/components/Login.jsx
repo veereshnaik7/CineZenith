@@ -4,6 +4,7 @@ import { TbPasswordUser } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { success } from "../reduxToolkit/cineZenithSlice";
+import '../css/login.css'
 
 const Login = () => {
   
