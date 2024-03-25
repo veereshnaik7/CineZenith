@@ -50,7 +50,7 @@ const App = () => {
               element={<TrendingPeopledetails />}
             />
             <Route path="/people" element={<People />} />
-            <Route path="/details" element={<Details />} />
+            <Route path="/movies/:id" element={<Details />} />
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/watchList" element={<WatchList />} />
 
