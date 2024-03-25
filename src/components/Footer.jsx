@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </Link>
 
-            <p>what do we suggest for you is.?</p>
+            <p className="content-p">what do we suggest for you is.?</p>
             <Link to="/movies" id="footer-link">
               <div className="router_icon">
                 <IoLogoMedium /> Movies
@@ -40,14 +40,14 @@ const Footer = () => {
             </Link>
           </div>
           <div className="support">
-            <p>you can contact via...?</p>
+            <p className="content-p">you can contact via...?</p>
             <div className="info">
               <a href="mailto:jerryveeru1@gmail.com">jerryveeru1@gmail.com </a>
               <a href="callto:7702513376"> +91 7702513376</a>
             </div>
           </div>
         </div>
-        <p className="fallow">you can fallow us on...</p>
+        <p className="fallow content-p">you can fallow us on...</p>
         <div className="social-media">
           <Link
             className="social-media-icons"

@@ -1,18 +1,17 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import {  useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
 
 const Tvdetails = () => {
   const [tvcast, settvcast] = useState([]);
-  const [trailer, setTrailer] = useState([]);
+  const [trailer, setTrailer] = useState("");
   const [error, seterror] = useState("");
   const loaction = useLocation();
   const details = loaction.state.details;
-  const navigate=useNavigate()
-  
+  const navigate = useNavigate();
 
   const {
     first_air_date,
@@ -21,12 +20,11 @@ const Tvdetails = () => {
     vote_average,
     poster_path,
     origin_country,
-    
+
     overview,
     backdrop_path,
-  
+
     adult,
-  
   } = details;
 
   const handleCastMovies = () => {
@@ -56,7 +54,10 @@ const Tvdetails = () => {
           r.data.results?.find(
             (element) =>
               element.name.includes("Official Trailer") ||
-              element.name.includes("Trailer")
+              element.name.includes("Trailer") ||
+              element.type.includes("Trailer") ||
+              element.type.includes("Teaser") ||
+              element.name.includes("Teaser")
           ).key
         );
       })
@@ -64,18 +65,17 @@ const Tvdetails = () => {
         seterror("no details found");
       });
   };
-  
 
   useEffect(() => {
     handleCastMovies();
-    handleTVtrailers()
+    handleTVtrailers();
   }, []);
   const backgroundimg = {
     backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
   };
   return (
     <div className="main-div" id="main-div">
-      <div className="details" style={backgroundimg} >
+      <div className="details" style={backgroundimg}>
         <div className="details-img">
           <img
             className="poster-path-img"
@@ -90,13 +90,14 @@ const Tvdetails = () => {
           </h4>
           <>
             user score{" "}
-            <div className="votescore" >
+            <div className="votescore">
               {Math.round((100 * vote_average) / 10)}%
             </div>
           </>
           <p className="content-p">countery origin : {origin_country}</p>
-          <div> 
-            <a id="trailer"
+          <div>
+            <a
+              id="trailer"
               title="play trailer"
               target="_blank"
               rel="noopener noreferrer"
@@ -104,18 +105,23 @@ const Tvdetails = () => {
             >
               <CiPlay1 className="rating-icons" />
             </a>
-            <MdOutlinePlaylistAdd className="rating-icons" title="add to watch list"
-              onClick={ ()=>{
-                axios.post('http://localhost:3001/watchListTvShows',details)
-               navigate('/watchlist')
-             }}
-             />
-            <CiHeart className="rating-icons" title="add to favorites"
-            onClick={ ()=>{
-              axios.post('http://localhost:3001/FavouriteTvShows',details)
-             navigate('/favourites')
-           }} />
-            
+            <MdOutlinePlaylistAdd
+              className="rating-icons"
+              title="add to watch list"
+              onClick={() => {
+                axios.post("http://localhost:3001/watchListTvShows", details);
+                navigate("/watchlist");
+              }}
+            />
+            <CiHeart
+              className="rating-icons"
+              title="add to favorites"
+              onClick={() => {
+                axios.post("http://localhost:3001/FavouriteTvShows", details);
+                navigate("/favourites");
+              }}
+            />
+
             <h4>overview</h4>
             <p className="content-p">{overview}</p>
           </div>

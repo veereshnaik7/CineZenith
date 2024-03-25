@@ -52,8 +52,11 @@ const TrendingTvshowDetails = () => {
         setTrailer(
           r.data.results?.find(
             (element) =>
-              element.name.includes("Official Trailer") ||
-              element.name.includes("Trailer")
+            element.name.includes("Official Trailer") ||
+            element.name.includes("Trailer") ||
+            element.type.includes("Trailer") ||
+            element.type.includes("Teaser") ||
+            element.name.includes("Teaser")
           ).key
         );
       })
@@ -61,8 +64,6 @@ const TrendingTvshowDetails = () => {
         seterror(error.status.message);
       });
   };
-
-      
       const backgroundimg = {
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
       };
