@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="logo">
           {open && <div className="brand_name">CineZenith</div>}
           <div className="bars" onClick={toggle}>
-            <FaBars />
+            <FaBars className="nav-icon" />
           </div>
         </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
             <>
               <NavLink to="/" className="route_item">
                 <div className="router_icon">
-                  <FaHome />
+                  <FaHome className="nav-icon" />
                 </div>
                 <div style={view} className="link_text">
                   Home
@@ -61,7 +61,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/trending" className="route_item">
                 <div className="router_icon">
-                  <MdOutlineTrendingUp />
+                  <MdOutlineTrendingUp className="nav-icon"  />
                 </div>
                 <div style={view} className="link_text">
                   Trending
@@ -69,7 +69,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/movies" className="route_item">
                 <div className="router_icon">
-                  <IoLogoMedium />
+                  <IoLogoMedium className="nav-icon" />
                 </div>
                 <div style={view} className="link_text">
                   Movies
@@ -77,7 +77,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/tv" className="route_item">
                 <div className="router_icon">
-                  <MdResetTv />
+                  <MdResetTv className="nav-icon"  />
                 </div>
                 <div style={view} className="link_text">
                   TV
@@ -85,7 +85,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/people" className="route_item">
                 <div className="router_icon">
-                  <GoPeople />
+                  <GoPeople className="nav-icon" />
                 </div>
                 <div style={view} className="link_text">
                   persons
@@ -93,7 +93,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/watchlist" className="route_item">
                 <div className="router_icon">
-                  <MdOutlinePlaylistAddCheck />
+                  <MdOutlinePlaylistAddCheck className="nav-icon" />
                 </div>
                 <div style={view} className="link_text">
                   watchlist
@@ -101,7 +101,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/favourites" className="route_item">
                 <div className="router_icon">
-                  <FaRegHeart />
+                  <FaRegHeart className="nav-icon" />
                 </div>
                 <div style={view} className="link_text">
                   Favourites
@@ -110,7 +110,7 @@ const Navbar = () => {
 
               <NavLink to="/about" className="route_item">
                 <div className="router_icon">
-                  <BsFillPersonFill />
+                  <BsFillPersonFill className="nav-icon" />
                 </div>
                 <div style={view} className="link_text">
                   About

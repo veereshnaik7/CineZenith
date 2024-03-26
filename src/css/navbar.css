@@ -39,6 +39,10 @@
 .router_icon:active {
   transform: scale(1.01);
 }
+.nav-icon:hover,.nav-icon:active{
+  transform: scale(1.3);
+  transition: 0.2s ease;
+}
 
 @media screen and (min-width: 320px) and (max-width: 426px) {
   .route_item {

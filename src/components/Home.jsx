@@ -125,7 +125,7 @@ const Home = () => {
                   src={`https://image.tmdb.org/t/p/original/${poster_path}`}
                   alt=""
                 />
-                <p>
+                <p className="trail-name">
                   {title} &nbsp; &nbsp;
                   {release_date}
                 </p>
