@@ -228,7 +228,7 @@ const TV = () => {
           )
         )}
       </div>
-      <h4>Airing Today</h4>
+      <h3>Airing Today</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -300,7 +300,7 @@ const TV = () => {
             )
           )}
       </div>
-      <h4>Top Rated Tv Shows</h4>
+      <h3>Top Rated Tv Shows</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -372,7 +372,7 @@ const TV = () => {
             )
           )}
       </div>
-      <h4>popular Tv Shows</h4>
+      <h3>popular Tv Shows</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -445,7 +445,7 @@ const TV = () => {
           )}
       </div>
 
-      <h4>PastWeekTopShows</h4>
+      <h3>PastWeekTopShows</h3>
       <div className="outer">
         {loading && (
           <ColorRing
