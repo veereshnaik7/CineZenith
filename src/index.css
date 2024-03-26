@@ -21,15 +21,8 @@ code {
     monospace;
 }
 #main-div {
-  padding: 0.5rem 0rem ;
+  padding: 0.5rem 0rem;
 }
-
-
-
-
-
-
-
 
 .main-div {
   width: calc(100% - 60px);
@@ -42,10 +35,10 @@ code {
     #e3eeff 100%
   );
 }
-.main-div>h3{
+.main-div > h3 {
   margin-left: 0.5rem;
 }
-.main-div>h6{
+.main-div > h6 {
   text-align: center;
   margin-bottom: 0.5rem;
 }
@@ -64,7 +57,7 @@ video {
 .outer {
   display: flex;
   overflow: auto;
-  margin-bottom: 0.5rem ;
+  margin-bottom: 0.5rem;
 }
 
 .wrapper {
@@ -267,6 +260,99 @@ button:active {
   color: black;
 }
 
+.t-card {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background-image: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem;
+}
+
+.t-card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-top: 0;
+  width: 350px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.t-card .card-btn {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #1f4c65;
+  cursor: pointer;
+  z-index: 999;
+  border: none;
+  display: none;
+
+}
+.t-card:hover .card-btn{
+  display: block;
+}
+
+#adjust{
+  position: absolute;
+  bottom: 25%;
+  right: 20%;
+  color: wheat;
+  top: 25%;
+  
+}
+
+#adjust:hover,
+#adjust:active{
+  transform: scale(1.1);
+  transition: ease 0.2s;
+}
+.t-card:hover .card-btn {
+  opacity: 1;
+  scale: 1;
+}
+
+.t-card .card-btn:hover,.t-card .card-btn:active {
+  box-shadow: 0 0 0px 3px wheat;
+}
+
+.t-card .card-btn:active {
+  scale: 0.95;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #f89b2980 0%, #ff0f7b80 100%);
+  transition: transform 0.5s ease;
+}
+
+.t-card:hover .overlay::after {
+  transform: translate(-50%, -50%) scale(2);
+}
+
 @media screen and (min-width: 320px) and (max-width: 426px) {
   .wrapper {
     padding: 0.5rem;
@@ -276,7 +362,7 @@ button:active {
   .card p {
     margin: 0.5rem 0;
   }
-  .card button{
+  .card button {
     font-size: 1rem;
     padding: 0.4rem;
   }
@@ -309,12 +395,12 @@ button:active {
     font-size: 0.7rem;
   }
 
-  .descriptions p{
+  .descriptions p {
     font-size: 0.9rem;
   }
-  .name+p{
+  .name + p {
     padding-top: 0.5rem;
-   }
+  }
 }
 
 @media screen and (min-width: 427px) and (max-width: 768px) {
@@ -333,14 +419,15 @@ button:active {
     width: 140px;
     height: 220px;
   }
-  .descriptions>p{
+  .descriptions > p {
     font-size: 1rem;
     padding: 0;
     margin: 0.3rem;
   }
-  .name+p{
-    padding-top: 0.1rem;margin-bottom: 0.3rem;
-   }
+  .name + p {
+    padding-top: 0.1rem;
+    margin-bottom: 0.3rem;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 }
