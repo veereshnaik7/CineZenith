@@ -20,7 +20,7 @@ const People = () => {
   useEffect(() => {
     dispatch(fetchPopularPeople());
   }, []);
-
+console.log(popularPeople);
   const handlePopularPeopleDetails = ({
     adult,
     gender,
@@ -150,9 +150,7 @@ const People = () => {
           </svg>
         </button>
       </div>
-
- 
-      {searchpersondata != [] ? <h4>{msg}</h4> : <></>}
+      {searchpersondata != [] ? <h3>{msg}</h3> : <></>}
       <div className="peoples-styling">
         {searchpersondata.map(
           ({
@@ -172,7 +170,7 @@ const People = () => {
                   <img
                     className="poster-path-img"
                     src={`https://image.tmdb.org/t/p/original/${profile_path}`}
-                    alt="img"
+                    alt="popular people"
                   />
                   <div className="descriptions">
                     <p className="name">{name}</p>
@@ -203,7 +201,7 @@ const People = () => {
           )
         )}
       </div>
-      <h4>Trending Peoples</h4>
+      <h3>popular Peoples</h3>
       <div className="peoples-styling">
         {loading && (
           <ColorRing

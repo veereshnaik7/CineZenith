@@ -135,7 +135,7 @@ const handleTrendingPeople=({ adult,
   };
   return (
     <div className="main-div" id="main-div">
-      <h4>Trending All</h4>
+      <h3>Trending All</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -209,7 +209,7 @@ const handleTrendingPeople=({ adult,
             )
           )}
       </div>
-      <h4>Trending Movies</h4>
+      <h3>Trending Movies</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -281,7 +281,7 @@ const handleTrendingPeople=({ adult,
             )
           )}
       </div>
-      <h4> Trending Tv Shows</h4>
+      <h3> Trending Tv Shows</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -357,7 +357,7 @@ const handleTrendingPeople=({ adult,
             )
           )}
       </div>
-      <h4>Trending Peoples</h4>
+      <h3>Trending Peoples</h3>
       <div className="outer">
         {loading && (
           <ColorRing

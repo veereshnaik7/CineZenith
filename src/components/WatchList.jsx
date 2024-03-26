@@ -1,31 +1,31 @@
 import { ColorRing } from "react-loader-spinner";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchWatchListMovies, fetchWatchlistTvShows } from "../reduxToolkit/cineZenithSlice";
+import {
+  fetchWatchListMovies,
+  fetchWatchlistTvShows,
+} from "../reduxToolkit/cineZenithSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
 
 const WatchList = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     dispatch(fetchWatchListMovies());
-    dispatch(fetchWatchlistTvShows())
+    dispatch(fetchWatchlistTvShows());
   }, []);
   const error = useSelector((state) => state.cineZenithSlice.error);
   const loading = useSelector((state) => state.cineZenithSlice.loading);
   const watchListMovies = useSelector(
     (state) => state.cineZenithSlice.watchListMovies
   );
-const watchListTvShows= useSelector(
-  (state) => (state.cineZenithSlice.
-    watchListTvshows)
-);
+  const watchListTvShows = useSelector(
+    (state) => state.cineZenithSlice.watchListTvshows
+  );
   const reversedWatchListMovies = watchListMovies.toReversed();
   const reversedWatchListTvShows = watchListTvShows.toReversed();
- 
 
   const handlemovieDetails = ({
     release_date,
@@ -94,8 +94,8 @@ const watchListTvShows= useSelector(
       >
         here's ur watchlist
       </h3>
-      <h4>your watchlist movies...</h4>
-      <div className="outer" >
+      <h3>your watchlist movies...</h3>
+      <div className="outer">
         {loading && (
           <ColorRing
             visible={true}
@@ -137,7 +137,6 @@ const watchListTvShows= useSelector(
                       <p>{release_date}</p>
                       <p> {vote_average}/10</p>
                       <button
-                        className="btn"
                         onClick={() =>
                           handlemovieDetails({
                             release_date,
@@ -156,30 +155,27 @@ const watchListTvShows= useSelector(
                       >
                         Details
                       </button>
-                      
-                    </div>
-                    <button 
-                        className="btn"
-                        onClick={()=>{
-                          axios.delete(`http://localhost:3001/watchListMovies/${id}`)
+                      <button
+                        style={{ marginTop: "0.5rem" }}
+                        onClick={() => {
+                          axios.delete(
+                            `http://localhost:3001/watchListMovies/${id}`
+                          );
                           dispatch(fetchWatchListMovies());
-                        }}>
-                          Remove
-                        </button>
+                        }}
+                      >
+                        Remove
+                      </button>
+                    </div>
                   </div>
-                 
                 </div>
-                
               </div>
             )
           )}
-          
-           
-          
       </div>
       <h6>{`you have ${reversedWatchListMovies.length} watchlist movies`}</h6>
-      <h4>your watchlist TV shows...</h4>
-      <div className="outer" >
+      <h3>your watchlist TV shows...</h3>
+      <div className="outer">
         {loading && (
           <ColorRing
             visible={true}
@@ -222,7 +218,6 @@ const watchListTvShows= useSelector(
                       <p>{first_air_date}</p>
                       <p> {vote_average}/10</p>
                       <button
-                        className="btn"
                         onClick={() =>
                           handletvshowDetails({
                             first_air_date,
@@ -243,17 +238,18 @@ const watchListTvShows= useSelector(
                       >
                         Details
                       </button>
-                    </div>
-                    <button style={{zIndex:"7899"}}
-                        className="btn"
-                        onClick={()=>{
-                          axios.delete(`http://localhost:3001/watchListTvShows/${id}`)
+                      <button
+                        style={{ marginTop: "0.5rem" }}
+                        onClick={() => {
+                          axios.delete(
+                            `http://localhost:3001/watchListTvShows/${id}`
+                          );
                           dispatch(fetchWatchlistTvShows());
-                        }}>
-                          Remove
-                        </button>
-                        
-                          
+                        }}
+                      >
+                        Remove
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

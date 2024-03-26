@@ -82,7 +82,7 @@ const PopularPeopleDetails = () => {
               </div>
               {
                 <div className="movies-did">
-                  <h5>Movie Acted</h5>
+                  <h4>Movies Acted</h4>
                   <ul>
                     {known_for.map(({ title, name }) => (
                       <li key={name }>{title ?? name}</li>
@@ -90,7 +90,7 @@ const PopularPeopleDetails = () => {
                   </ul>
                 </div>
               }
-              <h5>Biography</h5>
+              <h4>Biography</h4>
               <div className="bio">{biography}</div>
             </>
           )

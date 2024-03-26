@@ -168,7 +168,7 @@ const TV = () => {
         </button>
       </div>
       {
-        tvdata!=[]?<h4>{msg}</h4>:<></>
+        tvdata!=[]?<h3>{msg}</h3>:<></>
       }
       <div className="outer">
         {tvdata.map(

@@ -220,7 +220,7 @@ export const fetchPopularPeople = createAsyncThunk(
   "fetchPopularPeople",
   async () => {
     const popularPeople = await axios.get(
-      "https://api.themoviedb.org/3/person/popular",
+      "https://api.themoviedb.org/3/trending/person/day",
       {
         headers: {
           accept: "application/json",

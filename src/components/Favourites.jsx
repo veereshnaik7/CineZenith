@@ -93,7 +93,7 @@ const Favourites = () => {
       >
         here's ur Favourites list
       </h3>
-      <h4>your Favourite movies...</h4>
+      <h3>your Favourite movies...</h3>
       <div className="outer">
         {loading && (
           <ColorRing
@@ -136,7 +136,6 @@ const Favourites = () => {
                       <p>{release_date}</p>
                       <p> {vote_average}/10</p>
                       <button
-                        className="btn"
                         onClick={() =>
                           handlemovieDetails({
                             release_date,
@@ -155,9 +154,8 @@ const Favourites = () => {
                       >
                         Details
                       </button>
-                    </div>
-                    <button
-                      className="btn"
+                      <button
+                       style={{marginTop:"0.5rem"}}
                       onClick={() => {
                         axios.delete(
                           `http://localhost:3001/FavouriteMovies/${id}`
@@ -167,6 +165,8 @@ const Favourites = () => {
                     >
                       Remove
                     </button>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const Favourites = () => {
           )}
       </div>
       <h6>{`you have ${reversedFavouriteMovies.length} Favourites movies`}</h6>
-      <h4>your Favourite TV Shows...</h4>
+      <h3>your Favourite TV Shows...</h3>
       <div className="outer" >
         {loading && (
           <ColorRing
@@ -218,7 +218,7 @@ const Favourites = () => {
                       <p>{first_air_date}</p>
                       <p> {vote_average}/10</p>
                       <button
-                        className="btn"
+                        
                         onClick={() =>
                           handletvshowDetails({
                             first_air_date,
@@ -239,9 +239,8 @@ const Favourites = () => {
                       >
                         Details
                       </button>
-                    </div>
-                    <button style={{zIndex:"7899"}}
-                        className="btn"
+                      <button 
+                        style={{marginTop:"0.5rem"}}
                         onClick={()=>{
                           axios.delete(`http://localhost:3001/FavouriteTvShows/${id}`)
                           dispatch(fetchFavouritesTVshows());
@@ -249,6 +248,8 @@ const Favourites = () => {
                         >
                           Remove
                         </button>
+                    </div>
+                    
                         
                           
                   </div>

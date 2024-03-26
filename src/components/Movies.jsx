@@ -167,7 +167,7 @@ const Movies = () => {
           </svg>
         </button>
       </div>
-      {searchMovieData != [] ? <h4>{msg}</h4> : <></>}
+      {searchMovieData != [] ? <h3>{msg}</h3> : <></>}
       <div className="outer">
         {searchMovieData.map(
           ({

@@ -2,11 +2,29 @@
   margin: 0;
   padding: 0;
 }
+
+.peoples-styling{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.peoples-styling .wrapper{
+  width: 130px;
+  height: 200px;
+}
+
+
+
+
+
+.people-details {
+  padding: 1rem;
+}
 .profile-card {
   overflow: visible;
   width: 190px;
-  height: 254px;
-  padding: 1rem;
+  height: 250px;
 }
 
 .content {
@@ -16,7 +34,6 @@
   transition: transform 300ms;
   box-shadow: 0px 0px 10px 1px #000000ee;
   border-radius: 5px;
-  
 }
 .front,
 .back {
@@ -28,7 +45,6 @@
   -webkit-backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
-
 }
 
 .back {
@@ -38,7 +54,6 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-
 }
 
 .back::before {
@@ -57,7 +72,6 @@
     transparent
   );
   animation: rotation_481 5000ms infinite linear;
-
 }
 
 .back-content {
@@ -71,15 +85,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .back-content img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
-
-  
 }
 
 .profile-card:hover .content {
@@ -99,7 +110,6 @@
 .front {
   transform: rotateY(180deg);
   color: white;
-
 }
 
 .front .front-content {
@@ -122,7 +132,6 @@
   border-radius: 10px;
   backdrop-filter: blur(2px);
   width: fit-content;
-  
 }
 
 .description {
@@ -190,26 +199,53 @@
   margin: 0;
   padding: 0;
 }
-
+.movies-did ul {
+  list-style-type: none;
+  margin: 0.5rem 0;
+}
+.movies-did ul li,.bio {
+  font-size: 1rem;
+}
+.bio{
+  margin-top: 0.5rem;
+}
 @media screen and (max-width: 426px) and (min-width: 320px) {
-  .profile-card {
-    overflow: visible;
-    width: 120px;
-    height: 160px;
-  }
-p{
-  font-size: 0.6rem;
-}
-}
-
-
-@media screen and (max-width: 768px) and (min-width: 427px) {
   .profile-card {
     overflow: visible;
     width: 140px;
     height: 180px;
+    object-fit: cover;
   }
-p{
-  font-size: 0.7rem;
+  p {
+    font-size: 0.6rem;
+  }
+  .peoples-styling{
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0;
+
+  }
+  .peoples-styling .wrapper{
+    width: 110px;
+    height: 170px;
+  }
 }
+
+@media screen and (max-width: 768px) and (min-width: 427px) {
+  .profile-card {
+    overflow: visible;
+    width: 200px;
+    height: 220px;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .peoples-styling{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+
+  }
 }
