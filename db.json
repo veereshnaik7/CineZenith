@@ -27,7 +27,25 @@
       "adult": false
     }
   ],
-  "watchListTvShows": [],
+  "watchListTvShows": [
+    {
+      "first_air_date": "2015-09-08",
+      "id": 63770,
+      "name": "The Late Show with Stephen Colbert",
+      "vote_average": 6.524,
+      "poster_path": "/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
+      "origin_country": [
+        "US"
+      ],
+      "original_name": "The Late Show with Stephen Colbert",
+      "popularity": 2542.358,
+      "overview": "Stephen Colbert brings his signature satire and comedy to The Late Show with Stephen Colbert, the #1 show in late night, where he talks with an eclectic mix of guests about what is new and relevant in the worlds of politics, entertainment, business, music, technology, and more. Featuring bandleader Jon Batiste with his band Stay Human, the Emmy Award-nominated show is broadcast from the historic Ed Sullivan Theater. Stephen Colbert, Chris Licht, Tom Purcell, and Jon Stewart are executive producers. Barry Julien and Denise Rehrig serve as co-executive producers.",
+      "backdrop_path": "/gMMnf8VRg3Z98WaFmOLr9Jk8pIs.jpg",
+      "original_language": "en",
+      "adult": false,
+      "vote_count": 250
+    }
+  ],
   "FavouriteMovies": [
     {
       "release_date": "2024-02-14",
@@ -40,6 +58,19 @@
       "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
       "backdrop_path": "/zAepSrO99owYwQqi0QG2AS0dHXw.jpg",
       "original_language": "en",
+      "adult": false
+    },
+    {
+      "release_date": "2024-01-18",
+      "id": 1096197,
+      "title": "No Way Up",
+      "vote_average": 6.165,
+      "poster_path": "/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
+      "vote_count": 282,
+      "popularity": 968.007,
+      "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
+      "backdrop_path": "/mDeUmPe4MF35WWlAqj4QFX5UauJ.jpg",
+      "original_language": "pt",
       "adult": false
     }
   ],
@@ -66,6 +97,23 @@
       "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
       "vote_average": 8.7,
       "vote_count": 54
+    },
+    {
+      "first_air_date": "2015-09-08",
+      "id": 63770,
+      "name": "The Late Show with Stephen Colbert",
+      "vote_average": 6.524,
+      "poster_path": "/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
+      "origin_country": [
+        "US"
+      ],
+      "original_name": "The Late Show with Stephen Colbert",
+      "popularity": 2542.358,
+      "overview": "Stephen Colbert brings his signature satire and comedy to The Late Show with Stephen Colbert, the #1 show in late night, where he talks with an eclectic mix of guests about what is new and relevant in the worlds of politics, entertainment, business, music, technology, and more. Featuring bandleader Jon Batiste with his band Stay Human, the Emmy Award-nominated show is broadcast from the historic Ed Sullivan Theater. Stephen Colbert, Chris Licht, Tom Purcell, and Jon Stewart are executive producers. Barry Julien and Denise Rehrig serve as co-executive producers.",
+      "backdrop_path": "/gMMnf8VRg3Z98WaFmOLr9Jk8pIs.jpg",
+      "original_language": "en",
+      "adult": false,
+      "vote_count": 250
     }
   ]
 }

@@ -47,7 +47,7 @@ const {adult,
       const handleTrailerdetails = () => {
         axios
           .get(
-            `http://api.themoviedb.org/3/movie/${id}/videos?api_key=01e8b81e206c6bf3216333d44cc761d1`
+            `https://api.themoviedb.org/3/movie/${id}/videos?api_key=01e8b81e206c6bf3216333d44cc761d1`
           )
           .then((r) => {
             settrailerkey(
