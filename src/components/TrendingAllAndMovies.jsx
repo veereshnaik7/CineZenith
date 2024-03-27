@@ -101,7 +101,7 @@ const {adult,
 
             <MdOutlinePlaylistAdd className="rating-icons" title="add to watch list"
               onClick={ ()=>{
-                axios.post('http://localhost:3001/watchListMovies',detailsAllAndMovie)
+                axios.post('https://cinezenith-json-server.onrender.com/watchListMovies',detailsAllAndMovie)
                navigate('/watchlist')
              }}
              />
@@ -109,7 +109,7 @@ const {adult,
 
             <CiHeart className="rating-icons" title="add to favorites" 
              onClick={ ()=>{
-              axios.post('http://localhost:3001/FavouriteMovies',detailsAllAndMovie)
+              axios.post('https://cinezenith-json-server.onrender.com/FavouriteMovies',detailsAllAndMovie)
              navigate('/favourites')
            }}/>
             <h4>overview</h4>

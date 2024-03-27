@@ -106,12 +106,12 @@ const TrendingTvshowDetails = () => {
 
             <MdOutlinePlaylistAdd className="rating-icons" title="add to watch list"
             onClick={ ()=>{
-              axios.post('http://localhost:3001/watchListTvShows',TrendingTvShowDetails)
+              axios.post('https://cinezenith-json-server.onrender.com/watchListTvShows',TrendingTvShowDetails)
              navigate('/watchlist')
            }} />
             <CiHeart className="rating-icons" title="add to favorites" 
              onClick={ ()=>{
-              axios.post('http://localhost:3001/FavouriteTvShows',TrendingTvShowDetails)
+              axios.post('https://cinezenith-json-server.onrender.com/FavouriteTvShows',TrendingTvShowDetails)
              navigate('/favourites')
            }}
             />

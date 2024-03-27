@@ -1,70 +1,14 @@
 {
   "watchListMovies": [
-    {
-      "release_date": "2023-10-06",
-      "id": 1046090,
-      "title": "The Pig, the Snake and the Pigeon",
-      "vote_average": 7.552,
-      "poster_path": "/7IJ7F8tX7IAkpUdaGovOBJqORnJ.jpg",
-      "vote_count": 106,
-      "popularity": 670.252,
-      "overview": "The arrogant, third most-wanted criminal in Taiwan, decides to get rid of the top two competitors and crowns himself the most-wanted criminal before dying.",
-      "backdrop_path": "/cu5Qk2QHxOyyMrD3Bq93DxgmJer.jpg",
-      "original_language": "zh",
-      "adult": false
-    }
+   
   ],
   "watchListTvShows": [
-    {
-      "first_air_date": "2015-09-08",
-      "id": 63770,
-      "name": "The Late Show with Stephen Colbert",
-      "vote_average": 6.524,
-      "poster_path": "/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
-      "origin_country": [
-        "US"
-      ],
-      "original_name": "The Late Show with Stephen Colbert",
-      "popularity": 2542.358,
-      "overview": "Stephen Colbert brings his signature satire and comedy to The Late Show with Stephen Colbert, the #1 show in late night, where he talks with an eclectic mix of guests about what is new and relevant in the worlds of politics, entertainment, business, music, technology, and more. Featuring bandleader Jon Batiste with his band Stay Human, the Emmy Award-nominated show is broadcast from the historic Ed Sullivan Theater. Stephen Colbert, Chris Licht, Tom Purcell, and Jon Stewart are executive producers. Barry Julien and Denise Rehrig serve as co-executive producers.",
-      "backdrop_path": "/gMMnf8VRg3Z98WaFmOLr9Jk8pIs.jpg",
-      "original_language": "en",
-      "adult": false,
-      "vote_count": 250
-    }
+    
   ],
   "FavouriteMovies": [
-    {
-      "release_date": "2024-01-18",
-      "id": 1096197,
-      "title": "No Way Up",
-      "vote_average": 6.165,
-      "poster_path": "/hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg",
-      "vote_count": 282,
-      "popularity": 968.007,
-      "overview": "Characters from different backgrounds are thrown together when the plane they're travelling on crashes into the Pacific Ocean. A nightmare fight for survival ensues with the air supply running out and dangers creeping in from all sides.",
-      "backdrop_path": "/mDeUmPe4MF35WWlAqj4QFX5UauJ.jpg",
-      "original_language": "pt",
-      "adult": false
-    }
+    
   ],
   "FavouriteTvShows": [
-    {
-      "first_air_date": "2015-09-08",
-      "id": 63770,
-      "name": "The Late Show with Stephen Colbert",
-      "vote_average": 6.524,
-      "poster_path": "/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
-      "origin_country": [
-        "US"
-      ],
-      "original_name": "The Late Show with Stephen Colbert",
-      "popularity": 2542.358,
-      "overview": "Stephen Colbert brings his signature satire and comedy to The Late Show with Stephen Colbert, the #1 show in late night, where he talks with an eclectic mix of guests about what is new and relevant in the worlds of politics, entertainment, business, music, technology, and more. Featuring bandleader Jon Batiste with his band Stay Human, the Emmy Award-nominated show is broadcast from the historic Ed Sullivan Theater. Stephen Colbert, Chris Licht, Tom Purcell, and Jon Stewart are executive producers. Barry Julien and Denise Rehrig serve as co-executive producers.",
-      "backdrop_path": "/gMMnf8VRg3Z98WaFmOLr9Jk8pIs.jpg",
-      "original_language": "en",
-      "adult": false,
-      "vote_count": 250
-    }
+    
   ]
 }

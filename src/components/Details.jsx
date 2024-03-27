@@ -105,8 +105,8 @@ const Details = () => {
               className="rating-icons"
               title="add to watch list"
               onClick={() => {
-                axios.post("http://localhost:3001/watchListMovies", details);
-                localStorage.setItem("watchlistmovie", details);
+                axios.post("https://cinezenith-json-server.onrender.com/watchListMovies", details);
+                
                 navigate("/watchlist");
               }}
             />
@@ -114,7 +114,7 @@ const Details = () => {
               className="rating-icons"
               title="add to favorites"
               onClick={() => {
-                axios.post("http://localhost:3001/FavouriteMovies", details);
+                axios.post("https://cinezenith-json-server.onrender.com/FavouriteMovies", details);
                 navigate("/favourites");
               }}
             />

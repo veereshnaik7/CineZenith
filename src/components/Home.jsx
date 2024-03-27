@@ -39,16 +39,16 @@ const Home = () => {
 
   const handleLogout = () => {
     for (let i of watchListMovies) {
-      axios.delete(`http://localhost:3001/watchListMovies/${i.id}`);
+      axios.delete(`https://cinezenith-json-server.onrender.com/watchListMovies/${i.id}`);
     }
     for (let i of watchListTvshows) {
-      axios.delete(`http://localhost:3001/watchListTvShows/${i.id}`);
+      axios.delete(`https://cinezenith-json-server.onrender.com/watchListTvShows/${i.id}`);
     }
     for (let i of favouriteMovies) {
-      axios.delete(`http://localhost:3001/FavouriteMovies/${i.id}`);
+      axios.delete(`https://cinezenith-json-server.onrender.com/FavouriteMovies/${i.id}`);
     }
     for (let i of favouriteTVshows) {
-      axios.delete(`http://localhost:3001/FavouriteTvShows/${i.id}`);
+      axios.delete(`https://cinezenith-json-server.onrender.com/FavouriteTvShows/${i.id}`);
     }
 
     localStorage.clear();

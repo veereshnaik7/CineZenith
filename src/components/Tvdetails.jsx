@@ -109,7 +109,7 @@ const Tvdetails = () => {
               className="rating-icons"
               title="add to watch list"
               onClick={() => {
-                axios.post("http://localhost:3001/watchListTvShows", details);
+                axios.post("https://cinezenith-json-server.onrender.com/watchListTvShows", details);
                 navigate("/watchlist");
               }}
             />
@@ -117,7 +117,7 @@ const Tvdetails = () => {
               className="rating-icons"
               title="add to favorites"
               onClick={() => {
-                axios.post("http://localhost:3001/FavouriteTvShows", details);
+                axios.post("https://cinezenith-json-server.onrender.com/FavouriteTvShows", details);
                 navigate("/favourites");
               }}
             />
