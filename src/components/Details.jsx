@@ -6,13 +6,12 @@ import { CiHeart } from "react-icons/ci";
 import { CiPlay1 } from "react-icons/ci";
 
 const Details = () => {
-  
   const loaction = useLocation();
   const [trailer, settrailer] = useState("");
   const [movieCast, setmovieCast] = useState([]);
   const [error, seterror] = useState("");
   const details = loaction.state.details;
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   const {
     release_date,
@@ -20,8 +19,7 @@ const Details = () => {
     title,
     vote_average,
     poster_path,
-  
-    
+
     overview,
     backdrop_path,
     original_language,
@@ -66,14 +64,15 @@ const Details = () => {
 
   useEffect(() => {
     handleCastMovies();
-    
+    handleTrailerdetails();
   }, []);
+  console.log(trailer);
   const backgroundimg = {
     backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
   };
   return (
     <div className="main-div" id="main-div">
-      <div className="details" style={backgroundimg} onClick={()=>handleTrailerdetails()}>
+      <div className="details" style={backgroundimg}>
         <div className="details-img">
           <img
             className="poster-path-img"
@@ -106,18 +105,20 @@ const Details = () => {
             <MdOutlinePlaylistAdd
               className="rating-icons"
               title="add to watch list"
-              onClick={ ()=>{
-                axios.post('http://localhost:3001/watchListMovies',details)
-                localStorage.setItem('watchlistmovie',details)
-                navigate('/watchlist')
+              onClick={() => {
+                axios.post("http://localhost:3001/watchListMovies", details);
+                localStorage.setItem("watchlistmovie", details);
+                navigate("/watchlist");
               }}
-             
             />
-            <CiHeart className="rating-icons" title="add to favorites" 
-            onClick={ ()=>{
-              axios.post('http://localhost:3001/FavouriteMovies',details)
-             navigate('/favourites')
-           }}/>
+            <CiHeart
+              className="rating-icons"
+              title="add to favorites"
+              onClick={() => {
+                axios.post("http://localhost:3001/FavouriteMovies", details);
+                navigate("/favourites");
+              }}
+            />
 
             <h4>overview</h4>
             <p className="content-p">{overview}</p>
