@@ -357,6 +357,9 @@ button:active {
   z-index: 783687;
 }
 
+
+
+
 @media screen and (min-width: 320px) and (max-width: 426px) {
   .wrapper {
     padding: 0.5rem;
@@ -422,6 +425,7 @@ button:active {
   }
 }
 
+
 @media screen and (min-width: 427px) and (max-width: 768px) {
   .searchBox {
     width: 90%;
@@ -443,9 +447,10 @@ button:active {
     padding: 0;
     margin: 0.3rem;
   }
+
   .name + p {
-    padding-top: 0.1rem;
-    margin-bottom: 0.3rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .t-card {
     position: relative;
