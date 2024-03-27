@@ -130,7 +130,7 @@ const Home = () => {
               original_language,
               adult,
             }) => (
-              <div className="t-card" key={id} onClick={() => handleTrailerdetails({ id })} >
+              <div className="t-card" key={id} onClick={() => handleTrailerdetails({ id })}  onMouseMove={() => handleTrailerdetails({ id })}>
                 <img
                   src={`https://image.tmdb.org/t/p/original/${poster_path}`}
                   alt=""
