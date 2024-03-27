@@ -161,7 +161,7 @@ const Favourites = () => {
                         style={{ marginTop: "0.5rem" }}
                         onClick={() => {
                           axios.delete(
-                            `http://localhost:3001/FavouriteMovies/${id}`
+                            `https://cinezenith-json-server.onrender.com/FavouriteMovies/${id}`
                           );
                           dispatch(fetchFavouritesMovies());
                         }}
@@ -244,7 +244,7 @@ const Favourites = () => {
                         style={{ marginTop: "0.5rem" }}
                         onClick={() => {
                           axios.delete(
-                            `http://localhost:3001/FavouriteTvShows/${id}`
+                            `https://cinezenith-json-server.onrender.com/FavouriteTvShows/${id}`
                           );
                           dispatch(fetchFavouritesTVshows());
                         }}

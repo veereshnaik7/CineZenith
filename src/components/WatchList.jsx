@@ -162,7 +162,7 @@ const WatchList = () => {
                         style={{ marginTop: "0.5rem" }}
                         onClick={() => {
                           axios.delete(
-                            `http://localhost:3001/watchListMovies/${id}`
+                            `https://cinezenith-json-server.onrender.com/watchListMovies/${id}`
                           );
                           dispatch(fetchWatchListMovies());
                         }}
@@ -245,7 +245,7 @@ const WatchList = () => {
                         style={{ marginTop: "0.5rem" }}
                         onClick={() => {
                           axios.delete(
-                            `http://localhost:3001/watchListTvShows/${id}`
+                            `https://cinezenith-json-server.onrender.com/watchListTvShows/${id}`
                           );
                           dispatch(fetchWatchlistTvShows());
                         }}
