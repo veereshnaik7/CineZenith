@@ -54,6 +54,7 @@ const {adult,
               r.data.results?.find(
                 (element) =>
                   element.name.includes("Official Trailer") ||
+                  element.type.includes("Official Trailer") ||
                   element.name.includes("Trailer")
               ).key
             );

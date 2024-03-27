@@ -53,6 +53,7 @@ const Details = () => {
           r.data.results?.find(
             (element) =>
               element.name.includes("Official Trailer") ||
+              element.type.includes("Official Trailer") ||
               element.name.includes("Trailer") ||
               element.type.includes("Trailer") 
              
