@@ -28,7 +28,21 @@
     }
   ],
   "watchListTvShows": [],
-  "FavouriteMovies": [],
+  "FavouriteMovies": [
+    {
+      "release_date": "2024-02-14",
+      "id": 634492,
+      "title": "Madame Web",
+      "vote_average": 5.618,
+      "poster_path": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+      "vote_count": 786,
+      "popularity": 2212.848,
+      "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
+      "backdrop_path": "/zAepSrO99owYwQqi0QG2AS0dHXw.jpg",
+      "original_language": "en",
+      "adult": false
+    }
+  ],
   "FavouriteTvShows": [
     {
       "adult": false,
