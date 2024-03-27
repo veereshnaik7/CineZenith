@@ -54,9 +54,8 @@ const Details = () => {
             (element) =>
               element.name.includes("Official Trailer") ||
               element.name.includes("Trailer") ||
-              element.type.includes("Trailer") ||
-              element.type.includes("Teaser") ||
-              element.name.includes("Teaser")
+              element.type.includes("Trailer") 
+             
           ).key
         );
       });
