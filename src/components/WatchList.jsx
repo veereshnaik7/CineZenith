@@ -167,7 +167,7 @@ const WatchList = () => {
 
                           setTimeout(() => {
                             dispatch(fetchWatchListMovies());
-                          }, 1500);
+                          }, 1200);
                         }}
                       >
                         Remove
@@ -253,7 +253,7 @@ const WatchList = () => {
 
                           setTimeout(() => {
                             dispatch(fetchWatchlistTvShows());
-                          }, 1500);
+                          }, 1200);
                         }}
                       >
                         Remove

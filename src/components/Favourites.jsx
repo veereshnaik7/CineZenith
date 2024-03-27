@@ -165,7 +165,7 @@ const Favourites = () => {
                           );
                           setTimeout(() => {
                             dispatch(fetchFavouritesMovies());
-                          }, 1500);
+                          }, 1200);
                         }}
                       >
                         Remove
@@ -250,7 +250,7 @@ const Favourites = () => {
                           );
                           setTimeout(() => {
                             dispatch(fetchFavouritesTVshows());
-                          }, 1500);
+                          }, 1200);
                         }}
                       >
                         Remove
