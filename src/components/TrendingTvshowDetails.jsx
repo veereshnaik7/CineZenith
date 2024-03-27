@@ -55,8 +55,7 @@ const TrendingTvshowDetails = () => {
             element.name.includes("Official Trailer") ||
             element.name.includes("Trailer") ||
             element.type.includes("Trailer") ||
-            element.type.includes("Teaser") ||
-            element.name.includes("Teaser")
+           
           ).key
         );
       })
