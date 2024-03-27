@@ -8,7 +8,7 @@ import { CiPlay1 } from "react-icons/ci";
 const Details = () => {
   
   const loaction = useLocation();
-  const [trailerkey, settrailerkey] = useState("");
+  const [trailer, settrailer] = useState("");
   const [movieCast, setmovieCast] = useState([]);
   const [error, seterror] = useState("");
   const details = loaction.state.details;
@@ -51,7 +51,7 @@ const Details = () => {
         `http://api.themoviedb.org/3/movie/${id}/videos?api_key=01e8b81e206c6bf3216333d44cc761d1`
       )
       .then((r) => {
-        settrailerkey(
+        settrailer(
           r.data.results?.find(
             (element) =>
               element.name.includes("Official Trailer") ||
@@ -99,7 +99,7 @@ const Details = () => {
               title="play trailer"
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://www.youtube.com/watch?v=${trailerkey}`}
+              href={`https://www.youtube.com/watch?v=${trailer}`}
             >
               <CiPlay1 className="rating-icons" />
             </a>
