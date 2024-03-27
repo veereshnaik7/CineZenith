@@ -30,7 +30,7 @@ const TrendingPeopledetails = () => {
     handleCastMovies();
   }, []);
   return (
-    <div className="main-div" id="main-div">
+    <div className="main-div" >
       <div className="people-details">
         {data.map(
           ({

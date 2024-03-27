@@ -70,7 +70,7 @@ const Details = () => {
     backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
   };
   return (
-    <div className="main-div" id="main-div">
+    <div className="main-div">
       <div className="details" style={backgroundimg}>
         <div className="details-img">
           <img

@@ -74,7 +74,7 @@ const TrendingTvshowDetails = () => {
         
       }, []);
   return (
-    <div className='main-div' id="main-div">
+    <div className='main-div' >
        <div className="details"  style={backgroundimg}>
         <div className="details-img">
           <img

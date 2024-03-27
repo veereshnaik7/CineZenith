@@ -163,10 +163,9 @@ const Favourites = () => {
                           axios.delete(
                             `https://cinezenith-json-server.onrender.com/FavouriteMovies/${id}`
                           );
-                          setTimeout(()=>{
+                          setTimeout(() => {
                             dispatch(fetchFavouritesMovies());
-                          },1500)
-                          
+                          }, 1500);
                         }}
                       >
                         Remove
@@ -180,7 +179,7 @@ const Favourites = () => {
       </div>
       <h6>{`you have ${reversedFavouriteMovies.length} Favourites movies`}</h6>
       <h3>your Favourite TV Shows...</h3>
-      <div className="outer">
+      <div className="outer" id="outer">
         {loading && (
           <ColorRing
             visible={true}
@@ -211,7 +210,7 @@ const Favourites = () => {
               vote_count,
             }) => (
               <div className="top-card" key={id} id="outerwatchlist">
-                <div className="wrapper">
+                <div className="wrapper" id="wrapper">
                   <div className="card">
                     <img
                       className="poster-path-img"
