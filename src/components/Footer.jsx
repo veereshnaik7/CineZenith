@@ -43,7 +43,7 @@ const Footer = () => {
             <p className="content-p">you can contact via...?</p>
             <div className="info">
               <a href="mailto:jerryveeru1@gmail.com">jerryveeru1@gmail.com </a>
-              <a href="callto:7702513376"> +91 7702513376</a>
+              <a href="tel:7702513376"> +91 1234567890</a>
             </div>
           </div>
         </div>
