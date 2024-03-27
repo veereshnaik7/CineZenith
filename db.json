@@ -1,19 +1,6 @@
 {
   "watchListMovies": [
     {
-      "release_date": "2024-02-14",
-      "id": 634492,
-      "title": "Madame Web",
-      "vote_average": 5.618,
-      "poster_path": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
-      "vote_count": 786,
-      "popularity": 2212.848,
-      "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
-      "backdrop_path": "/zAepSrO99owYwQqi0QG2AS0dHXw.jpg",
-      "original_language": "en",
-      "adult": false
-    },
-    {
       "release_date": "2023-10-06",
       "id": 1046090,
       "title": "The Pig, the Snake and the Pigeon",
@@ -48,19 +35,6 @@
   ],
   "FavouriteMovies": [
     {
-      "release_date": "2024-02-14",
-      "id": 634492,
-      "title": "Madame Web",
-      "vote_average": 5.618,
-      "poster_path": "/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
-      "vote_count": 786,
-      "popularity": 2212.848,
-      "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
-      "backdrop_path": "/zAepSrO99owYwQqi0QG2AS0dHXw.jpg",
-      "original_language": "en",
-      "adult": false
-    },
-    {
       "release_date": "2024-01-18",
       "id": 1096197,
       "title": "No Way Up",
@@ -75,29 +49,6 @@
     }
   ],
   "FavouriteTvShows": [
-    {
-      "adult": false,
-      "backdrop_path": "/n5pumhzyH0jIBtRoGGjJd8O0wQ0.jpg",
-      "first_air_date": "2024-03-20",
-      "genre_ids": [
-        16,
-        10759,
-        10765
-      ],
-      "id": 138502,
-      "media_type": "tv",
-      "name": "X-Men '97",
-      "origin_country": [
-        "US"
-      ],
-      "original_language": "en",
-      "original_name": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "popularity": 582.786,
-      "poster_path": "/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
-      "vote_average": 8.7,
-      "vote_count": 54
-    },
     {
       "first_air_date": "2015-09-08",
       "id": 63770,

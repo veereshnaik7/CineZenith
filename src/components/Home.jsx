@@ -68,7 +68,7 @@ const Home = () => {
   const handleTrailerdetails = ({ id }) => {
     axios
       .get(
-        `http://api.themoviedb.org/3/movie/${id}/videos?api_key=01e8b81e206c6bf3216333d44cc761d1`
+        `https://api.themoviedb.org/3/tv/${id}/videos?api_key=01e8b81e206c6bf3216333d44cc761d1`
       )
       .then((r) => {
         settrailerkey(
