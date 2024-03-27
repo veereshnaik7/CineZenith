@@ -13,9 +13,12 @@ const WatchList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    dispatch(fetchWatchListMovies());
-    dispatch(fetchWatchlistTvShows());
+    setTimeout(() => {
+      dispatch(fetchWatchListMovies());
+      dispatch(fetchWatchlistTvShows());
+    }, 1500);
   }, []);
+
   const error = useSelector((state) => state.cineZenithSlice.error);
   const loading = useSelector((state) => state.cineZenithSlice.loading);
   const watchListMovies = useSelector(
