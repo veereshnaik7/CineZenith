@@ -16,7 +16,7 @@ const WatchList = () => {
     setTimeout(() => {
       dispatch(fetchWatchListMovies());
       dispatch(fetchWatchlistTvShows());
-    }, 1500);
+    }, 1200);
   }, []);
 
   const error = useSelector((state) => state.cineZenithSlice.error);

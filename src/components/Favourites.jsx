@@ -16,7 +16,7 @@ const Favourites = () => {
     setTimeout(() => {
       dispatch(fetchFavouritesMovies());
       dispatch(fetchFavouritesTVshows());
-    }, 1500);
+    }, 1200);
   }, []);
 
   const error = useSelector((state) => state.cineZenithSlice.error);
