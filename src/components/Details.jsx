@@ -65,7 +65,6 @@ const Details = () => {
     handleCastMovies();
     handleTrailerdetails();
   }, []);
-  console.log(trailer);
   const backgroundimg = {
     backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
   };
