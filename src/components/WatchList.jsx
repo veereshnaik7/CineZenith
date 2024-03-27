@@ -164,7 +164,10 @@ const WatchList = () => {
                           axios.delete(
                             `https://cinezenith-json-server.onrender.com/watchListMovies/${id}`
                           );
-                          dispatch(fetchWatchListMovies());
+
+                          setTimeout(() => {
+                            dispatch(fetchWatchListMovies());
+                          }, 1500);
                         }}
                       >
                         Remove
@@ -247,7 +250,10 @@ const WatchList = () => {
                           axios.delete(
                             `https://cinezenith-json-server.onrender.com/watchListTvShows/${id}`
                           );
-                          dispatch(fetchWatchlistTvShows());
+
+                          setTimeout(() => {
+                            dispatch(fetchWatchlistTvShows());
+                          }, 1500);
                         }}
                       >
                         Remove

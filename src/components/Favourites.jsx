@@ -163,7 +163,10 @@ const Favourites = () => {
                           axios.delete(
                             `https://cinezenith-json-server.onrender.com/FavouriteMovies/${id}`
                           );
-                          dispatch(fetchFavouritesMovies());
+                          setTimeout(()=>{
+                            dispatch(fetchFavouritesMovies());
+                          },1500)
+                          
                         }}
                       >
                         Remove
@@ -246,7 +249,9 @@ const Favourites = () => {
                           axios.delete(
                             `https://cinezenith-json-server.onrender.com/FavouriteTvShows/${id}`
                           );
-                          dispatch(fetchFavouritesTVshows());
+                          setTimeout(() => {
+                            dispatch(fetchFavouritesTVshows());
+                          }, 1500);
                         }}
                       >
                         Remove
