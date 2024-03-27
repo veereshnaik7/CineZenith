@@ -9,20 +9,23 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Favourites = () => {
-  
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   useEffect(() => {
-    dispatch(fetchFavouritesMovies());
-    dispatch(fetchFavouritesTVshows());
+    setTimeout(() => {
+      dispatch(fetchFavouritesMovies());
+      dispatch(fetchFavouritesTVshows());
+    }, 1500);
   }, []);
+
   const error = useSelector((state) => state.cineZenithSlice.error);
   const loading = useSelector((state) => state.cineZenithSlice.loading);
   const favouriteMovies = useSelector(
     (state) => state.cineZenithSlice.favouriteMovies
   );
-  const favouriteTVshows = useSelector((state) =>
-   (state.cineZenithSlice.favouriteTVshows)
+  const favouriteTVshows = useSelector(
+    (state) => state.cineZenithSlice.favouriteTVshows
   );
   const reversedFavouriteMovies = favouriteMovies.toReversed();
   const reversedFavouriteTVshows = favouriteTVshows.toReversed();
@@ -155,18 +158,17 @@ const Favourites = () => {
                         Details
                       </button>
                       <button
-                       style={{marginTop:"0.5rem"}}
-                      onClick={() => {
-                        axios.delete(
-                          `http://localhost:3001/FavouriteMovies/${id}`
-                        );
-                        dispatch(fetchFavouritesMovies());
-                      }}
-                    >
-                      Remove
-                    </button>
+                        style={{ marginTop: "0.5rem" }}
+                        onClick={() => {
+                          axios.delete(
+                            `http://localhost:3001/FavouriteMovies/${id}`
+                          );
+                          dispatch(fetchFavouritesMovies());
+                        }}
+                      >
+                        Remove
+                      </button>
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -175,7 +177,7 @@ const Favourites = () => {
       </div>
       <h6>{`you have ${reversedFavouriteMovies.length} Favourites movies`}</h6>
       <h3>your Favourite TV Shows...</h3>
-      <div className="outer" >
+      <div className="outer">
         {loading && (
           <ColorRing
             visible={true}
@@ -218,7 +220,6 @@ const Favourites = () => {
                       <p>{first_air_date}</p>
                       <p> {vote_average}/10</p>
                       <button
-                        
                         onClick={() =>
                           handletvshowDetails({
                             first_air_date,
@@ -239,19 +240,18 @@ const Favourites = () => {
                       >
                         Details
                       </button>
-                      <button 
-                        style={{marginTop:"0.5rem"}}
-                        onClick={()=>{
-                          axios.delete(`http://localhost:3001/FavouriteTvShows/${id}`)
+                      <button
+                        style={{ marginTop: "0.5rem" }}
+                        onClick={() => {
+                          axios.delete(
+                            `http://localhost:3001/FavouriteTvShows/${id}`
+                          );
                           dispatch(fetchFavouritesTVshows());
                         }}
-                        >
-                          Remove
-                        </button>
+                      >
+                        Remove
+                      </button>
                     </div>
-                    
-                        
-                          
                   </div>
                 </div>
               </div>
