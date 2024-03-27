@@ -235,23 +235,23 @@ export const fetchPopularPeople = createAsyncThunk(
 
 /// watchlist 
 export const fetchWatchListMovies=createAsyncThunk('fetchWatchListMovies',async()=>{
-  const watchListMovies=await axios.get('http://localhost:3001/watchListMovies')
+  const watchListMovies=await axios.get('https://cinezenith-json-server.onrender.com/watchListMovies')
   return watchListMovies.data;
 })
 
 export const fetchWatchlistTvShows=createAsyncThunk('fetchWatchlistTvShows',async()=>{
-  const watchListTvshows=await axios.get('http://localhost:3001/watchListTvShows')
+  const watchListTvshows=await axios.get('https://cinezenith-json-server.onrender.com/watchListTvShows')
   return watchListTvshows.data;
 })
 
 // favourites
 export const fetchFavouritesMovies=createAsyncThunk('fetchFavouritesMovies',async()=>{
-  const favouriteMovies=await axios.get('http://localhost:3001/FavouriteMovies')
+  const favouriteMovies=await axios.get('https://cinezenith-json-server.onrender.com/FavouriteMovies')
   return favouriteMovies.data;
 })
 
 export const fetchFavouritesTVshows=createAsyncThunk('fetchFavouritesTVshows',async()=>{
-  const favouriteTVshows=await axios.get('http://localhost:3001/FavouriteTvShows')
+  const favouriteTVshows=await axios.get('https://cinezenith-json-server.onrender.com/FavouriteTvShows')
   return favouriteTVshows.data;
 })
 
